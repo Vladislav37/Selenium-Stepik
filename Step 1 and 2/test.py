@@ -1,5 +1,5 @@
 from selenium import webdriver
-import time
+from time import sleep
 
 link = "http://suninjuly.github.io/find_xpath_form"
 
@@ -20,9 +20,9 @@ try:
 
 finally:
     # успеваем скопировать код за 30 секунд
-    time.sleep(30)
+    sleep(30)
     # закрываем браузер после всех манипуляций
-    #browser.quit()
+    browser.quit()
 
 # не забываем оставить пустую строку в конце файла
 

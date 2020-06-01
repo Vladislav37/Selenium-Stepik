@@ -1,11 +1,11 @@
-from selenium import webdriver
+import selenium
 import time
 import math
 from selenium.webdriver.support.ui import Select
 
 try:
     link = " http://SunInJuly.github.io/execute_script.html"
-    browser = webdriver.Chrome()
+    browser = selenium.webdriver.Chrome()
     browser.get(link)
 
 

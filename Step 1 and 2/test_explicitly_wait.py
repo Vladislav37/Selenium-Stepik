@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+import selenium.webdriver.common.by
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
@@ -12,7 +12,7 @@ browser.get("http://suninjuly.github.io/explicit_wait2.html")
 browser.implicitly_wait(10)
 
 WebDriverWait(browser, 13).until(
-    EC.text_to_be_present_in_element((By.ID, "price"), "$100")
+    EC.text_to_be_present_in_element((selenium.webdriver.common.by.By.ID, "price"), "$100")
 )
 button = browser.find_element_by_id("book")
 button.click()

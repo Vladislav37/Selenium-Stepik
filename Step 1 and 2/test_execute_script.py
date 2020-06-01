@@ -1,11 +1,11 @@
-from selenium import webdriver
+import selenium
 import time
 import math
 from selenium.webdriver.support.ui import Select
 
 try:
     link = "http://suninjuly.github.io/selects1.html"
-    browser = webdriver.Chrome()
+    browser = selenium.webdriver.Chrome()
     browser.get(link)
 
     x = browser.find_element_by_id('num1').text

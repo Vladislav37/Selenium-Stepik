@@ -1,11 +1,11 @@
-from selenium import webdriver
+import selenium
 import time
 import math
 
 
 try:
     link = "http://suninjuly.github.io/alert_accept.html"
-    browser = webdriver.Chrome()
+    browser = selenium.webdriver.Chrome()
     browser.get(link)
     time.sleep(3)
     button = browser.find_element_by_css_selector("button.btn")

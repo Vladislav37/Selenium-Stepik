@@ -1,9 +1,9 @@
-from selenium import webdriver
+import selenium
 import time
 
 try:
     link = "http://suninjuly.github.io/registration2.html"
-    browser = webdriver.Chrome()
+    browser = selenium.webdriver.Chrome()
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
